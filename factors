@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-
 import sys
 import time
 
@@ -10,8 +9,8 @@ def factorize(num):
     Args:
         num: input integer.
         Return: A tuple of two factors if the number is not a prime.
-                None if the number is prime.
-    '''
+                None if the number is prime.'''
+
     for i in range(2, int(num**0.5)+1):
         if num % i == 0:
             return (i, num//i)
@@ -21,8 +20,8 @@ def factorize(num):
 if __name__ == "__main__":
 
 
-    '''Reads the input file.
-    '''
+    '''Reads the input file.'''
+
     if len(sys.argv) != 2:
         print("Usage: factors <file>")
         exit()
